@@ -1,9 +1,9 @@
-<rb-header></rb-header>
+<rb-header (featureSelected)="onNavigate($event)"></rb-header>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <rb-recipes></rb-recipes>
-            <rb-shopping-list></rb-shopping-list>
+            <rb-recipes *ngIf="loadedFeature === 'recipe'"></rb-recipes>
+            <rb-shopping-list *ngIf="loadedFeature !== 'recipe'"></rb-shopping-list>
         </div>
     </div>
 </div>
