@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Response } from '@angular/http';
 
-import { DataStorageService } from '../shared/services/data-storage.service';
-import { AuthService } from '../auth/auth.service';
+import { DataStorageService } from '../../shared/services/data-storage.service';
+import { AuthService } from '../../auth/auth.service';
 
 @Component({
   selector: 'rb-header',
